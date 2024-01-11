@@ -6,15 +6,18 @@ import Github from '../components/icons/Github.astro';
 import Linkedin from '../components/icons/Linkedin.astro';
 import Histagram from '../components/icons/Instagram.astro';
 import Mail from '../components/icons/Mail.astro';
+import Card from '../components/Card.astro';
+import ContainerSection from '../components/ContainerSection.astro';
+import IconPortafolio from '../components/icons/IconPortafolio.astro';
 
 ---
 
 <Layout title="Portafolio Juan David C - Desarrollador and Data Scientins"
 description="please contact me to develop together.">
 	<main>
-		<section class="w-full mx-auto lg:w-[740px] py-44">
+		<ContainerSection class="py-44 pb-20"> 
 			<img 
-			class="rounded-full w-12 h-12 mb-4" 
+			class="rounded-full size-12 mb-4" 
 			src="https://avatars.githubusercontent.com/u/131068518?v=4"
 			alt="Juancho foto"
 			/>
@@ -35,22 +38,30 @@ description="please contact me to develop together.">
 
 			<nav class="flex gap-x-4 mt-8">
 				<Socialicons href="https://www.linkedin.com/in/juan-david-cordoba-610a66281/">
-				  <Linkedin class="w-6 h-6" />
+				  <Linkedin class="size-6" />
 				  Linkedin
 				</Socialicons>
 				<Socialicons href="https://github.com/juanchocor">
-				  <Github class="w-6 h-6" />
+				  <Github class="size-6" />
 				  Github
 				</Socialicons>
 				<Socialicons href="http://www.instagram.com/juanchocor_do/?hl=es">
-				  <Histagram class="w-6 h-6" />
+				  <Histagram class="size-6" />
 				  Histagram
 				</Socialicons>
 				<Socialicons href="">
-					<Histagram class="w-6 h-6" />
+					<Mail class="size-6" />
 					jazz1916.jdc@gmailcom
 				</Socialicons>
 			  </nav>
-	</section>
+		</ContainerSection>
+	
+	<ContainerSection>
+		<h1 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center" >
+			Portafolio
+			<IconPortafolio class="size-10" />
+		  </h1>
+		<Card />
+	</ContainerSection>
 	</main>
 </Layout>
